@@ -1,16 +1,19 @@
-14:31:23 **** Rebuild of configuration Debug for project assi_2_4 ****
+14:44:26 **** Rebuild of configuration Debug for project assi_2_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_4.o" "..\\src\\assi_2_4.c" 
-gcc -o assi_2_4.exe "src\\assi_2_4.o" 
-14:31:27 **** Incremental Build of configuration Debug for project assi_2_4 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_5.o" "..\\src\\assi_2_5.c" 
+gcc -o assi_2_5.exe "src\\assi_2_5.o" 
+14:44:29 **** Incremental Build of configuration Debug for project assi_2_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_4.o" "..\\src\\assi_2_4.c" 
-gcc -o assi_2_4.exe "src\\assi_2_4.o" 
-Info: Nothing to build for assi_2_4
-14:32:02 **** Incremental Build of configuration Debug for project assi_2_4 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_5.o" "..\\src\\assi_2_5.c" 
+gcc -o assi_2_5.exe "src\\assi_2_5.o" 
+Info: Nothing to build for assi_2_5
+Info: Nothing to build for assi_2_5
+14:48:28 **** Incremental Build of configuration Debug for project assi_2_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_4.o" "..\\src\\assi_2_4.c" 
-gcc -o assi_2_4.exe "src\\assi_2_4.o" 
-Info: Nothing to build for assi_2_4
-Info: Nothing to build for assi_2_4
-Info: Nothing to build for assi_2_4
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_5.o" "..\\src\\assi_2_5.c" 
+gcc -o assi_2_5.exe "src\\assi_2_5.o" 
+14:48:51 **** Incremental Build of configuration Debug for project assi_2_5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_5.o" "..\\src\\assi_2_5.c" 
+gcc -o assi_2_5.exe "src\\assi_2_5.o" 
+Info: Nothing to build for assi_2_5
