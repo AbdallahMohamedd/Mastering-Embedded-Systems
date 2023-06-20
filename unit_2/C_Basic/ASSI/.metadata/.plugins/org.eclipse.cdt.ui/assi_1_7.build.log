@@ -1,0 +1,11 @@
+13:26:50 **** Incremental Build of configuration Debug for project assi_1_7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_7.o" "..\\src\\assi_1_7.c" 
+..\src\assi_1_7.c: In function 'main':
+..\src\assi_1_7.c:14:10: warning: unused variable 'temp' [-Wunused-variable]
+  int a,b,temp;
+          ^~~~
+gcc -o assi_1_7.exe "src\\assi_1_7.o" 
+
+13:26:51 Build Finished (took 317ms)
+
