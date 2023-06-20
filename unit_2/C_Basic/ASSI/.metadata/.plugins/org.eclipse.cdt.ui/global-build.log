@@ -1,8 +1,16 @@
-11:32:01 **** Rebuild of configuration Debug for project assi_1_2 ****
+11:35:36 **** Rebuild of configuration Debug for project assi_1_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_2.o" "..\\src\\assi_1_2.c" 
-gcc -o assi_1_2.exe "src\\assi_1_2.o" 
-11:32:03 **** Incremental Build of configuration Debug for project assi_1_2 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_3.o" "..\\src\\assi_1_3.c" 
+gcc -o assi_1_3.exe "src\\assi_1_3.o" 
+11:35:39 **** Incremental Build of configuration Debug for project assi_1_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_2.o" "..\\src\\assi_1_2.c" 
-gcc -o assi_1_2.exe "src\\assi_1_2.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_3.o" "..\\src\\assi_1_3.c" 
+..\src\assi_1_3.c: In function 'main':
+..\src\assi_1_3.c:20:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("sum =",val1+val2);
+          ^~~~~~~
+gcc -o assi_1_3.exe "src\\assi_1_3.o" 
+11:36:25 **** Incremental Build of configuration Debug for project assi_1_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_3.o" "..\\src\\assi_1_3.c" 
+gcc -o assi_1_3.exe "src\\assi_1_3.o" 
