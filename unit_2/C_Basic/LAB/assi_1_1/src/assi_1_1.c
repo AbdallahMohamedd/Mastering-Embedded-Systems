@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : largest_number.c
+ Name        : assi_1_1.c
  Author      : Abdullah Mohamed
  Version     :
  Copyright   : Your copyright notice
