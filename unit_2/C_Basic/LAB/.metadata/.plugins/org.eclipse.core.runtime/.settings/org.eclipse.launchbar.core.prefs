@@ -1,6 +1,6 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:circle_data.exe,org.eclipse.launchbar.core.descriptorType.default\:largest_number.exe,org.eclipse.launchbar.core.descriptorType.default\:min_number.exe,org.eclipse.launchbar.core.descriptorType.default\:sum_of_numbers.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:circle_data.exe,org.eclipse.launchbar.core.descriptorType.default\:largest_number.exe,org.eclipse.launchbar.core.descriptorType.default\:min_number.exe,org.eclipse.launchbar.core.descriptorType.default\:sum_of_numbers.exe,org.eclipse.launchbar.core.descriptorType.default\:calc_avrg_degree.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:circle_data.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:circle_data.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
