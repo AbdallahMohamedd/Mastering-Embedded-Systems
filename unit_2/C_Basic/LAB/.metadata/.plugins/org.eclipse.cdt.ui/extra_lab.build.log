@@ -1,7 +1,3 @@
-11:02:58 **** Rebuild of configuration Debug for project extra_lab ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\extra_lab.o" "..\\src\\extra_lab.c" 
-gcc -o extra_lab.exe "src\\extra_lab.o" 
 11:03:00 **** Incremental Build of configuration Debug for project extra_lab ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\extra_lab.o" "..\\src\\extra_lab.c" 
@@ -67,3 +63,6 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\extra_lab.o" "..\\src\\extra_la
   for(int i=9;i<10;i++) printf("%d",i);printf("\n");
                                        ^~~~~~
 gcc -o extra_lab.exe "src\\extra_lab.o" 
+
+11:03:01 Build Finished (took 328ms)
+
