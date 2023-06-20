@@ -1,8 +1,19 @@
-11:39:25 **** Rebuild of configuration Debug for project assi_1_4 ****
+11:44:22 **** Rebuild of configuration Debug for project assi_1_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_4.o" "..\\src\\assi_1_4.c" 
-gcc -o assi_1_4.exe "src\\assi_1_4.o" 
-11:39:27 **** Incremental Build of configuration Debug for project assi_1_4 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_5.o" "..\\src\\assi_1_5.c" 
+gcc -o assi_1_5.exe "src\\assi_1_5.o" 
+11:44:25 **** Incremental Build of configuration Debug for project assi_1_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_4.o" "..\\src\\assi_1_4.c" 
-gcc -o assi_1_4.exe "src\\assi_1_4.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_5.o" "..\\src\\assi_1_5.c" 
+..\src\assi_1_5.c: In function 'main':
+..\src\assi_1_5.c:19:10: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%c",random);
+          ^
+..\src\assi_1_5.c:19:2: warning: 'random' is used uninitialized in this function [-Wuninitialized]
+  scanf("%c",random);
+  ^~~~~~~~~~~~~~~~~~
+gcc -o assi_1_5.exe "src\\assi_1_5.o" 
+11:44:47 **** Incremental Build of configuration Debug for project assi_1_5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_5.o" "..\\src\\assi_1_5.c" 
+gcc -o assi_1_5.exe "src\\assi_1_5.o" 
