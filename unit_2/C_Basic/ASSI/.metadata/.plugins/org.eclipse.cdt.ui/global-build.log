@@ -1,28 +1,10 @@
-13:24:34 **** Rebuild of configuration Debug for project assi_1_7 ****
+13:36:05 **** Rebuild of configuration Debug for project assi_2_1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_7.o" "..\\src\\assi_1_7.c" 
-gcc -o assi_1_7.exe "src\\assi_1_7.o" 
-13:24:36 **** Incremental Build of configuration Debug for project assi_1_7 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_1.o" "..\\src\\assi_2_1.c" 
+gcc -o assi_2_1.exe "src\\assi_2_1.o" 
+13:36:09 **** Incremental Build of configuration Debug for project assi_2_1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_7.o" "..\\src\\assi_1_7.c" 
-..\src\assi_1_7.c: In function 'main':
-..\src\assi_1_7.c:14:10: warning: unused variable 'temp' [-Wunused-variable]
-  int a,b,temp;
-          ^~~~
-gcc -o assi_1_7.exe "src\\assi_1_7.o" 
-13:26:31 **** Incremental Build of configuration Debug for project assi_1_7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_7.o" "..\\src\\assi_1_7.c" 
-..\src\assi_1_7.c: In function 'main':
-..\src\assi_1_7.c:14:10: warning: unused variable 'temp' [-Wunused-variable]
-  int a,b,temp;
-          ^~~~
-gcc -o assi_1_7.exe "src\\assi_1_7.o" 
-13:26:50 **** Incremental Build of configuration Debug for project assi_1_7 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_1_7.o" "..\\src\\assi_1_7.c" 
-..\src\assi_1_7.c: In function 'main':
-..\src\assi_1_7.c:14:10: warning: unused variable 'temp' [-Wunused-variable]
-  int a,b,temp;
-          ^~~~
-gcc -o assi_1_7.exe "src\\assi_1_7.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\assi_2_1.o" "..\\src\\assi_2_1.c" 
+gcc -o assi_2_1.exe "src\\assi_2_1.o" 
+Info: Nothing to build for assi_2_1
+Info: Nothing to build for assi_2_1
