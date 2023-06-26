@@ -1,0 +1,7 @@
+21:21:48 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
+gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
+
+21:21:50 Build Finished (took 2s.41ms)
+

@@ -1,23 +1,25 @@
-19:50:54 **** Rebuild of configuration Debug for project SUM_OF_MAT_ASSI_1 ****
+20:26:41 **** Rebuild of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SUM_OF_MAT_ASSI_1.o" "..\\src\\SUM_OF_MAT_ASSI_1.c" 
-gcc -o SUM_OF_MAT_ASSI_1.exe "src\\SUM_OF_MAT_ASSI_1.o" 
-19:51:09 **** Incremental Build of configuration Debug for project SUM_OF_MAT_ASSI_1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
+gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
+20:26:47 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SUM_OF_MAT_ASSI_1.o" "..\\src\\SUM_OF_MAT_ASSI_1.c" 
-gcc -o SUM_OF_MAT_ASSI_1.exe "src\\SUM_OF_MAT_ASSI_1.o" 
-Info: Nothing to build for SUM_OF_MAT_ASSI_1
-Info: Nothing to build for SUM_OF_MAT_ASSI_1
-19:54:59 **** Incremental Build of configuration Debug for project SUM_OF_MAT_ASSI_1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
+gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
+20:31:51 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SUM_OF_MAT_ASSI_1.o" "..\\src\\SUM_OF_MAT_ASSI_1.c" 
-gcc -o SUM_OF_MAT_ASSI_1.exe "src\\SUM_OF_MAT_ASSI_1.o" 
-19:59:01 **** Incremental Build of configuration Debug for project SUM_OF_MAT_ASSI_1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
+gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
+Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
+Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
+21:19:07 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SUM_OF_MAT_ASSI_1.o" "..\\src\\SUM_OF_MAT_ASSI_1.c" 
-gcc -o SUM_OF_MAT_ASSI_1.exe "src\\SUM_OF_MAT_ASSI_1.o" 
-Info: Nothing to build for SUM_OF_MAT_ASSI_1
-20:02:20 **** Incremental Build of configuration Debug for project SUM_OF_MAT_ASSI_1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
+gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
+Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
+Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
+Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
+21:21:48 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SUM_OF_MAT_ASSI_1.o" "..\\src\\SUM_OF_MAT_ASSI_1.c" 
-gcc -o SUM_OF_MAT_ASSI_1.exe "src\\SUM_OF_MAT_ASSI_1.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
+gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
