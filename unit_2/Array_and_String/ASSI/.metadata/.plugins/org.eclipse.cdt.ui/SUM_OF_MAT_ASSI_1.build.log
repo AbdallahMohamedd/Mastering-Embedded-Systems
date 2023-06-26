@@ -1,0 +1,7 @@
+20:02:20 **** Incremental Build of configuration Debug for project SUM_OF_MAT_ASSI_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SUM_OF_MAT_ASSI_1.o" "..\\src\\SUM_OF_MAT_ASSI_1.c" 
+gcc -o SUM_OF_MAT_ASSI_1.exe "src\\SUM_OF_MAT_ASSI_1.o" 
+
+20:02:22 Build Finished (took 1s.888ms)
+
