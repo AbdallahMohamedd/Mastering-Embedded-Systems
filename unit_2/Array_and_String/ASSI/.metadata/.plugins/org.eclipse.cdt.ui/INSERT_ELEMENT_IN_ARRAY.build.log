@@ -1,0 +1,7 @@
+22:08:12 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
+gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
+
+22:08:14 Build Finished (took 1s.998ms)
+

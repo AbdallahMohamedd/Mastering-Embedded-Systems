@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : INSERT_ELEMENT_IN_ARRAY.c
+ Author      : Abdullah Mohamed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int no;
+	printf("Enter no of elements: ");
+	fflush(stdin);    fflush(stdout);
+	scanf("%d",&no);
+	int data[no];
+	for(int i=1; i<=no; i++)
+	{
+		int n=0;
+		data[i]=i;
+		printf("%d \n",data[i]);
+	}
+}
