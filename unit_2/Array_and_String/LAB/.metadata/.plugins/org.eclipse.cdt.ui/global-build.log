@@ -1,8 +1,8 @@
-08:53:06 **** Rebuild of configuration Debug for project transpose_project ****
+09:08:25 **** Rebuild of configuration Debug for project transpose_matrix ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\transpose_project.o" "..\\src\\transpose_project.c" 
-gcc -o transpose_project.exe "src\\transpose_project.o" 
-08:53:16 **** Incremental Build of configuration Debug for project transpose_project ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\transpose_matrix.o" "..\\src\\transpose_matrix.c" 
+gcc -o transpose_matrix.exe "src\\transpose_matrix.o" 
+09:08:35 **** Incremental Build of configuration Debug for project transpose_matrix ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\transpose_project.o" "..\\src\\transpose_project.c" 
-gcc -o transpose_project.exe "src\\transpose_project.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\transpose_matrix.o" "..\\src\\transpose_matrix.c" 
+gcc -o transpose_matrix.exe "src\\transpose_matrix.o" 
