@@ -1,0 +1,7 @@
+08:53:16 **** Incremental Build of configuration Debug for project transpose_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\transpose_project.o" "..\\src\\transpose_project.c" 
+gcc -o transpose_project.exe "src\\transpose_project.o" 
+
+08:53:18 Build Finished (took 1s.937ms)
+

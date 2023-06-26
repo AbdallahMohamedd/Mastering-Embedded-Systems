@@ -1,0 +1,8 @@
+08:50:30 **** Incremental Build of configuration Debug for project transpose_matrix ****
+Info: Internal Builder is used for build
+gcc -o transpose_matrix.exe "src\\transpose_matrix.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file transpose_matrix.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+08:50:31 Build Finished (took 1s.40ms)
+
