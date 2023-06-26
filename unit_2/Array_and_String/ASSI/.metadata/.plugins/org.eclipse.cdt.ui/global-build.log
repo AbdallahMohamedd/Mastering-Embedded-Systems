@@ -1,25 +1,18 @@
-20:26:41 **** Rebuild of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
+21:38:19 **** Rebuild of configuration Debug for project TRANSPOSE_MATRIX_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
-gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
-20:26:47 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TRANSPOSE_MATRIX_3.o" "..\\src\\TRANSPOSE_MATRIX_3.c" 
+gcc -o TRANSPOSE_MATRIX_3.exe "src\\TRANSPOSE_MATRIX_3.o" 
+21:38:24 **** Incremental Build of configuration Debug for project TRANSPOSE_MATRIX_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
-gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
-20:31:51 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TRANSPOSE_MATRIX_3.o" "..\\src\\TRANSPOSE_MATRIX_3.c" 
+gcc -o TRANSPOSE_MATRIX_3.exe "src\\TRANSPOSE_MATRIX_3.o" 
+21:39:33 **** Incremental Build of configuration Debug for project TRANSPOSE_MATRIX_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
-gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
-Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
-Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
-21:19:07 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TRANSPOSE_MATRIX_3.o" "..\\src\\TRANSPOSE_MATRIX_3.c" 
+gcc -o TRANSPOSE_MATRIX_3.exe "src\\TRANSPOSE_MATRIX_3.o" 
+Info: Nothing to build for TRANSPOSE_MATRIX_3
+21:42:02 **** Incremental Build of configuration Debug for project TRANSPOSE_MATRIX_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
-gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
-Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
-Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
-Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
-21:21:48 **** Incremental Build of configuration Debug for project AVRG_ARRAY_OF_DATA_2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AVRG_ARRAY_OF_DATA_2.o" "..\\src\\AVRG_ARRAY_OF_DATA_2.c" 
-gcc -o AVRG_ARRAY_OF_DATA_2.exe "src\\AVRG_ARRAY_OF_DATA_2.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TRANSPOSE_MATRIX_3.o" "..\\src\\TRANSPOSE_MATRIX_3.c" 
+gcc -o TRANSPOSE_MATRIX_3.exe "src\\TRANSPOSE_MATRIX_3.o" 
+Info: Nothing to build for TRANSPOSE_MATRIX_3
