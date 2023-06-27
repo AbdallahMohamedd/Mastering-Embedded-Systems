@@ -1,1 +1,7 @@
-Info: Nothing to build for INSERT_NUMBER_4
+12:52:58 **** Incremental Build of configuration Debug for project INSERT_NUMBER_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_NUMBER_4.o" "..\\src\\INSERT_NUMBER_4.c" 
+gcc -o INSERT_NUMBER_4.exe "src\\INSERT_NUMBER_4.o" 
+
+12:53:00 Build Finished (took 2s.86ms)
+
