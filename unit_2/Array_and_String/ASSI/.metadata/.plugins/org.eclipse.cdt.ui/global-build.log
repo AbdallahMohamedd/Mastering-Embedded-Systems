@@ -1,46 +1,16 @@
-21:53:31 **** Rebuild of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
+12:38:31 **** Rebuild of configuration Debug for project INSERT_NUMBER_4 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-21:53:38 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_NUMBER_4.o" "..\\src\\INSERT_NUMBER_4.c" 
+gcc -o INSERT_NUMBER_4.exe "src\\INSERT_NUMBER_4.o" 
+12:38:43 **** Incremental Build of configuration Debug for project INSERT_NUMBER_4 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-..\src\INSERT_ELEMENT_IN_ARRAY.c: In function 'main':
-..\src\INSERT_ELEMENT_IN_ARRAY.c:23:7: warning: unused variable 'n' [-Wunused-variable]
-   int n=0;
-       ^
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-21:54:13 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_NUMBER_4.o" "..\\src\\INSERT_NUMBER_4.c" 
+gcc -o INSERT_NUMBER_4.exe "src\\INSERT_NUMBER_4.o" 
+12:42:33 **** Incremental Build of configuration Debug for project INSERT_NUMBER_4 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-..\src\INSERT_ELEMENT_IN_ARRAY.c: In function 'main':
-..\src\INSERT_ELEMENT_IN_ARRAY.c:23:7: warning: unused variable 'n' [-Wunused-variable]
-   int n=0;
-       ^
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-21:55:03 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-21:56:16 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-Info: Nothing to build for INSERT_ELEMENT_IN_ARRAY
-22:00:25 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-Info: Nothing to build for INSERT_ELEMENT_IN_ARRAY
-22:02:09 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-22:06:34 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
-22:08:12 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
-gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_NUMBER_4.o" "..\\src\\INSERT_NUMBER_4.c" 
+gcc -o INSERT_NUMBER_4.exe "src\\INSERT_NUMBER_4.o" 
+Info: Nothing to build for INSERT_NUMBER_4
+Info: Nothing to build for SUM_OF_MAT_ASSI_1
+Info: Nothing to build for AVRG_ARRAY_OF_DATA_2
+Info: Nothing to build for INSERT_NUMBER_4

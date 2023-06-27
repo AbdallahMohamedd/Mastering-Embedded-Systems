@@ -1,7 +1,9 @@
-22:08:12 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
+11:52:32 **** Incremental Build of configuration Debug for project INSERT_ELEMENT_IN_ARRAY ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\INSERT_ELEMENT_IN_ARRAY.o" "..\\src\\INSERT_ELEMENT_IN_ARRAY.c" 
 gcc -o INSERT_ELEMENT_IN_ARRAY.exe "src\\INSERT_ELEMENT_IN_ARRAY.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file INSERT_ELEMENT_IN_ARRAY.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
 
-22:08:14 Build Finished (took 1s.998ms)
+11:52:34 Build Finished (took 1s.981ms)
 

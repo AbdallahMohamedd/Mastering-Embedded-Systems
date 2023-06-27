@@ -15,10 +15,10 @@ int main(void)
 {
 	int number_of_data;
 	float sum=0;
+	float data[50];
 	printf("Enter the number of data: ");
 	fflush(stdin);    fflush(stdout);
 	scanf("%d",&number_of_data);
-	float data[number_of_data];
 	for(int i=0; i<number_of_data; i++)
 	{
 		printf("Enter number: ");

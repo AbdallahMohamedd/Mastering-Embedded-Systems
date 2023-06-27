@@ -1,0 +1,9 @@
+12:36:09 **** Incremental Build of configuration Debug for project INSERT_NUMBER_IN_ARRAY_4 ****
+Info: Internal Builder is used for build
+gcc -o INSERT_NUMBER_IN_ARRAY_4.exe "src\\INSERT_NUMBER_IN_ARRAY_4.o" 
+gcc: error: src\INSERT_NUMBER_IN_ARRAY_4.o: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+
+12:36:09 Build Finished (took 275ms)
+

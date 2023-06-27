@@ -7,11 +7,10 @@
  Description : Hello World in C, Ansi-style
  ============================================================================
  */
-
 #include <stdio.h>
-
 int main(void)
 {
+	int matrix[50][50];
 	int rows, columns;
 	printf("Enter the number of rows: ");
 	fflush(stdin);  fflush(stdout);
@@ -19,7 +18,6 @@ int main(void)
 	printf("Enter the number of columns: ");
 	fflush(stdin);  fflush(stdout);
 	scanf("%d",&columns);
-	int matrix[rows][columns];
 	////////////get the matrix///////////
 	printf("Enter the elementS\n");
 	for(int i=0;i<rows;i++)

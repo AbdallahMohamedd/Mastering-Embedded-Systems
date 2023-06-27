@@ -13,6 +13,7 @@
 int main(void)
 {
 	////////////first matrix/////////////////
+	float matrix1[50][50];
 	int rows1, columns1;
 	printf("Enter the number of rows for first matrix: ");
 	fflush(stdin);  fflush(stdout);
@@ -20,8 +21,8 @@ int main(void)
 	printf("Enter the number of columns for first matrix: ");
 	fflush(stdin);  fflush(stdout);
 	scanf("%d",&columns1);
-	float matrix1[rows1][columns1];
 	////////////first matrix/////////////////
+	float matrix2[50][50];
 	int rows2, columns2;
 	printf("Enter the number of rows for second matrix: ");
 	fflush(stdin);  fflush(stdout);
@@ -29,7 +30,6 @@ int main(void)
 	printf("Enter the number of columns for second matrix: ");
 	fflush(stdin);  fflush(stdout);
 	scanf("%d",&columns2);
-	float matrix2[rows2][columns2];
 	/////////////////check////////////////////
 	if(rows1!=rows2 || columns1!=columns2)
 	{
