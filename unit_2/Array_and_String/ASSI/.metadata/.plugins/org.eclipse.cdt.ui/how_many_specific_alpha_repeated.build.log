@@ -1,0 +1,9 @@
+08:32:11 **** Incremental Build of configuration Debug for project how_many_specific_alpha_repeated ****
+Info: Internal Builder is used for build
+gcc -o how_many_specific_alpha_repeated.exe "src\\how_many_specific_alpha_repeated.o" 
+gcc: error: src\how_many_specific_alpha_repeated.o: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+
+08:32:11 Build Finished (took 402ms)
+

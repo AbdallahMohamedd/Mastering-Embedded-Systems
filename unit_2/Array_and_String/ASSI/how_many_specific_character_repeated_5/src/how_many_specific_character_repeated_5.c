@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : how_many_specific_alpha_repeated.c
+ Author      : Abdullah Mohamed
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+	char string[100];
+	char c;
+	printf("Enter a string: ");
+	fflush(stdin);   fflush(stdout);
+	gets(string);
+	//////////////////////////////////
+	printf("Enter a character to find freq.: ");
+	fflush(stdin);   fflush(stdout);
+	scanf("%c",&c);
+	/////////////////////////////////
+	int counter=0,freq=0;
+	do
+	{
+		if(string[counter]==c)
+			freq+=1;
+		counter++;
+	}while(counter<strlen(string));
+	printf("freq. of %c = %d",c,freq);
+}

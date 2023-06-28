@@ -1,9 +1,9 @@
-08:06:36 **** Rebuild of configuration Debug for project search_an_element_in_array_5 ****
+08:47:15 **** Rebuild of configuration Debug for project how_many_specific_character_repeated_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\search_an_element_in_array_5.o" "..\\src\\search_an_element_in_array_5.c" 
-gcc -o search_an_element_in_array_5.exe "src\\search_an_element_in_array_5.o" 
-08:06:49 **** Incremental Build of configuration Debug for project search_an_element_in_array_5 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\how_many_specific_character_repeated_5.o" "..\\src\\how_many_specific_character_repeated_5.c" 
+gcc -o how_many_specific_character_repeated_5.exe "src\\how_many_specific_character_repeated_5.o" 
+08:47:20 **** Incremental Build of configuration Debug for project how_many_specific_character_repeated_5 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\search_an_element_in_array_5.o" "..\\src\\search_an_element_in_array_5.c" 
-gcc -o search_an_element_in_array_5.exe "src\\search_an_element_in_array_5.o" 
-Info: Nothing to build for search_an_element_in_array_5
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\how_many_specific_character_repeated_5.o" "..\\src\\how_many_specific_character_repeated_5.c" 
+gcc -o how_many_specific_character_repeated_5.exe "src\\how_many_specific_character_repeated_5.o" 
+Info: Nothing to build for how_many_specific_character_repeated_5
