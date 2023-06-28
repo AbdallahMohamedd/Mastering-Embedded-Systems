@@ -1,8 +1,7 @@
-09:13:14 **** Rebuild of configuration Debug for project reverse_string ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\reverse_string.o" "..\\src\\reverse_string.c" 
-gcc -o reverse_string.exe "src\\reverse_string.o" 
 09:13:20 **** Incremental Build of configuration Debug for project reverse_string ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\reverse_string.o" "..\\src\\reverse_string.c" 
 gcc -o reverse_string.exe "src\\reverse_string.o" 
+
+09:13:25 Build Finished (took 5s.64ms)
+
