@@ -1,0 +1,13 @@
+08:57:08 **** Incremental Build of configuration Debug for project find_the_length_of_string_7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\find_the_length_of_string_7.o" "..\\src\\find_the_length_of_string_7.c" 
+..\src\find_the_length_of_string_7.c: In function 'main':
+..\src\find_the_length_of_string_7.c:21:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0,i=0;
+      ^~~~~
+gcc -o find_the_length_of_string_7.exe "src\\find_the_length_of_string_7.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file find_the_length_of_string_7.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+08:57:11 Build Finished (took 2s.478ms)
+
