@@ -2,7 +2,7 @@
 int factorial(int x);
 int main()
 {
-    printf("%d", factorial(5));
+    printf("factorial(%d) = %d",5 , factorial(5));
 }
 
 int factorial(int x)
