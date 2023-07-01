@@ -17,7 +17,7 @@ int main()
 
 int minno (int array[],int n)
 {
-    int min=0;
+    int min=array[0];
     for(int i=0; i<n; i++)
     {
         if(array[i]<min)
