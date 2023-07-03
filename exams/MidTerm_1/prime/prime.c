@@ -15,6 +15,7 @@ int main()
             printf("%d ", prime(i));
     }
 }
+
 int prime(int n)
 {
     for (int c = 2; c < n; c++)
