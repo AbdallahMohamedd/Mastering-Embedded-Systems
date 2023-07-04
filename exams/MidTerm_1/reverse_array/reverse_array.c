@@ -1,19 +1,23 @@
 #include "stdio.h"
 #include "string.h"
-void reverse(char data[], int length);
+void reverse(int number[], int size);
 int main()
 {
-    char number[10000];
+    int number[10000];
+    int size;
+    printf("Enter, size of array: ");
+    scanf("%d", &size);
     printf("Enter, Input array: ");
-    gets(number);
-    reverse(number, strlen(number));
+    for (int i = 0; i < size; i++)
+        scanf("%d", &number[i]);
+    reverse(number, size);
 }
 
-void reverse(char data[], int length)
+void reverse(int number[], int size)
 {
     printf("The reverse array is: ");
-    for (int i = length; i >= 0; i--)
+    for (int i = size - 1; i >= 0; i--)
     {
-        printf("%c", data[i]);
+        printf("%d ", number[i]);
     }
 }
