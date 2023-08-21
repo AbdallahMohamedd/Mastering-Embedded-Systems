@@ -1,3 +1,9 @@
+/*
+Master Embedded Systems "learn in depth"
+Eng.: Abdullah Mohamed
+Unit 4      lesson:1        topic:LIFO "STACK"
+File:lifo.c
+*/
 #include "lifo.h"
 
 eLIFO_STATUS_t INIT_LIFO_FUN(sLIFO_INFO_t *lifo_info, uint32_t *buffer, uint32_t length)

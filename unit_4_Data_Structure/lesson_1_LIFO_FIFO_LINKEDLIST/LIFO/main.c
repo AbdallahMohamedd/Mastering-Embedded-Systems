@@ -1,3 +1,9 @@
+/*
+Master Embedded Systems "learn in depth"
+Eng.: Abdullah Mohamed
+Unit 4      lesson:1        topic:LIFO "STACK"
+File:main.c
+*/
 #include "stdio.h"
 #include "lifo.h"
 
