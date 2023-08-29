@@ -8,40 +8,44 @@ File:fifo.h
 /*Header protection*/
 #ifndef FIFO_H_
 #define FIFO_H_
-#include <stdint.h>
-#include <stdio.h>
+
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "stdint.h"
 
 /*
 Select type of data you need, as (uint32_t, uint8_t, uint16_t)
 */
-#define element_type uint8_t
-
+#define DATA_TYPE uint32_t
 
 /*Create structure to decelerate FIFO */
 typedef struct
 {
-	uint32_t length;
-	uint32_t counter;
-	element_type *base;
-	element_type *tail;
-	element_type *head;
-} sFIFO_t;
+    uint32_t length;
+    uint32_t counter;
+    DATA_TYPE *base;
+    DATA_TYPE *head;
+    DATA_TYPE *tail;
+} S_FIFO_t;
 
 
 /*Create enumeration to decelerate FIFO status*/
 typedef enum
 {
-	FIFO_no_error,
-	FIFO_empty,
-	FIFO_full,
-	FIFO_Null
-} eFIFO_STATUS;
+    FIFO_no_error,
+    FIFO_full,
+    FIFO_empty,
+    FIFO_Null
+} ENUM_FIFO_STATUES_t;
+
 
 /*FIFO  APIs*/
-eFIFO_STATUS INIT_FIFO_FUN(sFIFO_t *fifo_info, element_type *buffer, uint32_t length);
-eFIFO_STATUS ENqueue_FIFO_FUN(sFIFO_t *fifo_info, element_type item);
-eFIFO_STATUS DEqueue_FIFO_FUN(sFIFO_t *fifo_info, element_type *item);
-eFIFO_STATUS FIFO_STATUS(sFIFO_t *fifo_info);
-void PRINT_FIFO_FUN(sFIFO_t *fifo_info);
+ENUM_FIFO_STATUES_t INIT_FIFO_FUNC(S_FIFO_t *,uint32_t,DATA_TYPE*);
+ENUM_FIFO_STATUES_t ENqueue_FIFO_FUNC(S_FIFO_t *,DATA_TYPE);//push
+ENUM_FIFO_STATUES_t DEqueue_FIFO_FUNC(S_FIFO_t *);//pop
+void PRINT_FIFO_FUNC(S_FIFO_t *);
+
 
 #endif

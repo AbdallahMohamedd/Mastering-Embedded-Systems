@@ -6,22 +6,19 @@ File:main.c
 */
 
 #include "fifo.h"
-
 int main()
 {
-    element_type i;
-    element_type temp;
-    sFIFO_t FIFO_UART;
-    element_type BUFFER_UART[5];
+    S_FIFO_t UART_FIFO;
+    DATA_TYPE buffer[5], i, temp;
     /*---------------> INITIALIZE FIFO <---------------*/
-    if (FIFO_no_error == INIT_FIFO_FUN(&FIFO_UART, BUFFER_UART, 5))
+    if (INIT_FIFO_FUNC(&UART_FIFO, 5, buffer) == FIFO_no_error)
     {
         printf("INITIALZE FIFO IS DONE ;)\n\n");
     }
     /*---------------> ENQUEUE FIFO <---------------*/
-    for (i = 0; i < 5; i++)
+    for (i = 0; i < 8; i++)
     {
-        if (ENqueue_FIFO_FUN(&FIFO_UART, i) == FIFO_no_error)
+        if (ENqueue_FIFO_FUNC(&UART_FIFO, i) == FIFO_no_error)
         {
             printf("ENqueue FIFO IS DONE ;)\n");
             printf("\tENqueue (%d) item \n", i);
@@ -33,25 +30,27 @@ int main()
         }
     }
     /*---------------> PRINT FIFO <---------------*/
-    PRINT_FIFO_FUN(&FIFO_UART);
+    PRINT_FIFO_FUNC(&UART_FIFO);
     /*---------------> DEQUEUE FIFO <---------------*/
-    DEqueue_FIFO_FUN(&FIFO_UART, &temp);
-    printf("DEQUEUE FIFO BY DATA: (%d)\n", temp);
-    DEqueue_FIFO_FUN(&FIFO_UART, &temp);
-    printf("DEQUEUE FIFO BY DATA: (%d)\n", temp);
-    DEqueue_FIFO_FUN(&FIFO_UART, &temp);
-    printf("DEQUEUE FIFO BY DATA: (%d)\n", temp);
+    DEqueue_FIFO_FUNC(&UART_FIFO);
+    DEqueue_FIFO_FUNC(&UART_FIFO);
+    DEqueue_FIFO_FUNC(&UART_FIFO);
     /*---------------> PRINT FIFO <---------------*/
-    PRINT_FIFO_FUN(&FIFO_UART);
-    /*---------------> ENQUEUE FIFO <---------------*/           
-    ENqueue_FIFO_FUN(&FIFO_UART, (element_type)9);
+    PRINT_FIFO_FUNC(&UART_FIFO);
+    /*---------------> ENQUEUE FIFO <---------------*/
+    ENqueue_FIFO_FUNC(&UART_FIFO, (DATA_TYPE)9);
     printf("ENqueue FIFO IS DONE ;)\n");
-    printf("\tENqueue (%X) item \n", (element_type)9);
-    ENqueue_FIFO_FUN(&FIFO_UART, (element_type)8);
+    printf("\tENqueue (%X) item \n", (DATA_TYPE)9);
+    ENqueue_FIFO_FUNC(&UART_FIFO, (DATA_TYPE)8);
     printf("ENqueue FIFO IS DONE ;)\n");
-    printf("\tENqueue (%X) item \n", (element_type)8);
+    printf("\tENqueue (%X) item \n", (DATA_TYPE)8);
     /*---------------> PRINT FIFO <---------------*/
-    PRINT_FIFO_FUN(&FIFO_UART);
+    PRINT_FIFO_FUNC(&UART_FIFO);
+    /*---------------> DEQUEUE FIFO <---------------*/
+    DEqueue_FIFO_FUNC(&UART_FIFO);
+    DEqueue_FIFO_FUNC(&UART_FIFO);
+    /*---------------> PRINT FIFO <---------------*/
+    PRINT_FIFO_FUNC(&UART_FIFO);
 
     return 0;
 }
