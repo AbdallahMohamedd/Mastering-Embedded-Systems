@@ -23,7 +23,7 @@ state_func(DC_func_IDEAL)
 	// state name
 	DC_STATE = DC_state_IDEAL;
 	// event check
-	printf("DC_ideal_state: 		speed: %d \n", DC_speed);
+	printf("DC_ideal_state:\tspeed: %d \n", DC_speed);
 }
 state_func(DC_func_BUSY)
 {
@@ -33,5 +33,5 @@ state_func(DC_func_BUSY)
 	//DC_speed = 30;
 	DC_P_FUNC = state_name(DC_func_IDEAL);
 	// event check
-	printf("DC_ideal_state: 		speed: %d \n", DC_speed);
+	printf("DC_busy_state:\tspeed: %d \n", DC_speed);
 }
