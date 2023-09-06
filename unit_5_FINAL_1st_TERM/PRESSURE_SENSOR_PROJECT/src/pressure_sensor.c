@@ -11,7 +11,7 @@ File:pressure_sensor.c
 
 // State pointer to function
 void (*PS_p_to_func)();
-
+ 
 /*declare variables to used in only this file*/
 int PS_pressure_val = 0;
 

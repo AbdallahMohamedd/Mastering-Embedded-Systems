@@ -19,7 +19,7 @@ enum
     turn_alarm_off,
     turn_alarm_on
 } alarm_current_state;
-
+ 
 /*Declare alarm Function*/
 state_func(alarm_init_FUNC);
 state_func(turn_alarm_off_FUNC);

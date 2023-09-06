@@ -29,7 +29,7 @@ void Usage_fault_Handler (void) __attribute__((weak,alias("Default_Handler")));;
 uint32_t vectors[] __attribute__((section(".vectors"))) = 
 {
 	(uint32_t) &stack_top,
-	(uint32_t) &Rest_Handler,
+	(uint32_t) &Rest_Handler, 
 	(uint32_t) &NMI_Handler,
 	(uint32_t) &H_fault_Handler,
 	(uint32_t) &MM_fault_Handler,

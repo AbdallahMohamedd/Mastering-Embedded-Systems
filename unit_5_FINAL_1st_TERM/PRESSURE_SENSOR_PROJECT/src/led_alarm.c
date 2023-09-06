@@ -13,7 +13,7 @@ File:alarm_led.c
 void (*alarm_p_to_func)();
 
 /*declare variables to used in only this file*/
-int led_alarm = 0;
+int led_alarm = 0; 
 
 /*Initialize state connection function*/
 void Set_Alarm_connection_FUNC(int alarm_status)

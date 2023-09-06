@@ -11,7 +11,7 @@ File:state.h
 /*Debug*/
 //#define debug //////////// off 
 //#define yarab printf("@ Func: %s, File: %s, Line: %d \n", __func__, __FILE__, __LINE__);
-
+ 
 
 /*Macros to Function and Sympol Functions*/
 #define state_func(_FUNC_NAME) void _FUNC_NAME() // function decleration

@@ -13,7 +13,7 @@ File:main.c
 #include "stdio.h"
 #include "stdlib.h"
 
-void setup()
+void setup() 
 {
     // init Block
     alarm_init_FUNC();

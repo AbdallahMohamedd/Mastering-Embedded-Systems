@@ -8,7 +8,7 @@ File:brain.c
 /*used libraries*/
 #include "../inc/brain.h"
 
-// State pointer to function
+// State pointer to function 
 void (*brain_p_to_func)();
 
 /*declare variables to used in only this file*/

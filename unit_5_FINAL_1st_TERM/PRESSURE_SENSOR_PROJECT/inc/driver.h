@@ -8,7 +8,7 @@ File:driver.h
 #define AAAA 
 /*used libraries*/
 #include "state.h"
-
+ 
 #define SET_BIT(ADDRESS,BIT)   ADDRESS |=  (1<<BIT)
 #define RESET_BIT(ADDRESS,BIT) ADDRESS &= ~(1<<BIT)
 #define TOGGLE_BIT(ADDRESS,BIT)  ADDRESS ^=  (1<<BIT)
