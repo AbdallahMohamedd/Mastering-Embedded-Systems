@@ -1,0 +1,154 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+alarm_p_to_func     0x4               obj/led_alarm.o
+preusser_current_state
+                    0x1               obj/main.o
+PS_p_to_func        0x4               obj/pressure_sensor.o
+brain_current_state
+                    0x1               obj/brain.o
+brain_p_to_func     0x4               obj/brain.o
+alarm_current_state
+                    0x1               obj/led_alarm.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000         xr
+sram             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0x3ec
+ *(.vectors*)
+ .vectors       0x08000000       0x1c obj/startup.o
+                0x08000000                vectors
+ *(.text*)
+ .text          0x0800001c       0x94 obj/brain.o
+                0x0800001c                set_pressure_connection_FUNC
+                0x08000078                sleeping_FUNC
+                0x08000094                onnn_FUNC
+ .text          0x080000b0      0x10c obj/driver.o
+                0x080000b0                Delay
+                0x080000d4                getPressureVal
+                0x080000ec                Set_Alarm_actuator
+                0x0800013c                GPIO_INITIALIZATION
+ .text          0x080001bc       0x9c obj/led_alarm.o
+                0x080001bc                Set_Alarm_connection_FUNC
+                0x080001fc                alarm_init_FUNC
+                0x08000218                turn_alarm_off_FUNC
+                0x08000234                turn_alarm_on_FUNC
+ .text          0x08000258       0x74 obj/main.o
+                0x08000258                setup
+                0x08000278                main
+ .text          0x080002cc       0x64 obj/pressure_sensor.o
+                0x080002cc                pressure_init_FUNC
+                0x080002e8                turn_sensor_on_FUNC
+ .text          0x08000330       0xbc obj/startup.o
+                0x08000330                Bus_fault
+                0x08000330                MM_fault_Handler
+                0x08000330                Usage_fault_Handler
+                0x08000330                Default_Handler
+                0x08000330                H_fault_Handler
+                0x08000330                NMI_Handler
+                0x0800033c                Rest_Handler
+ *(.rodata*)
+                0x080003ec                _E_TEXT = .
+
+.glue_7         0x080003ec        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x080003ec        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x080003ec        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x080003ec        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x080003ec        0x0
+ .iplt          0x00000000        0x0 obj/brain.o
+
+.rel.dyn        0x080003ec        0x0
+ .rel.iplt      0x00000000        0x0 obj/brain.o
+
+.data           0x20000000        0x4 load address 0x080003ec
+                0x20000000                _S_DATA = .
+ *(.data*)
+ .data          0x20000000        0x4 obj/brain.o
+                0x20000000                brain_threshold
+ .data          0x20000004        0x0 obj/driver.o
+ .data          0x20000004        0x0 obj/led_alarm.o
+ .data          0x20000004        0x0 obj/main.o
+ .data          0x20000004        0x0 obj/pressure_sensor.o
+ .data          0x20000004        0x0 obj/startup.o
+                0x20000004                . = ALIGN (0x4)
+                0x20000004                _E_DATA = .
+
+.igot.plt       0x20000004        0x0 load address 0x080003f0
+ .igot.plt      0x00000000        0x0 obj/brain.o
+
+.bss            0x20000004     0x1024 load address 0x080003f0
+                0x20000004                _S_BSS = .
+ *(.bss*)
+ .bss           0x20000004        0x8 obj/brain.o
+                0x20000004                brain_pressure_val
+                0x20000008                brain_alarm_status
+ .bss           0x2000000c        0x0 obj/driver.o
+ .bss           0x2000000c        0x4 obj/led_alarm.o
+                0x2000000c                led_alarm
+ .bss           0x20000010        0x0 obj/main.o
+ .bss           0x20000010        0x4 obj/pressure_sensor.o
+                0x20000010                PS_pressure_val
+ .bss           0x20000014        0x0 obj/startup.o
+                0x20000014                _E_BSS = .
+                0x20000014                . = ALIGN (0x4)
+                0x20001014                . = (. + 0x1000)
+ *fill*         0x20000014     0x1000 
+                0x20001014                stack_top = .
+ COMMON         0x20001014        0x8 obj/brain.o
+                0x20001014                brain_current_state
+                0x20001018                brain_p_to_func
+ COMMON         0x2000101c        0x5 obj/led_alarm.o
+                0x2000101c                alarm_p_to_func
+                0x20001020                alarm_current_state
+ COMMON         0x20001021        0x1 obj/main.o
+                0x20001021                preusser_current_state
+ *fill*         0x20001022        0x2 
+ COMMON         0x20001024        0x4 obj/pressure_sensor.o
+                0x20001024                PS_p_to_func
+LOAD obj/brain.o
+LOAD obj/driver.o
+LOAD obj/led_alarm.o
+LOAD obj/main.o
+LOAD obj/pressure_sensor.o
+LOAD obj/startup.o
+OUTPUT(bin/P1_High_Pressure_Detector.elf elf32-littlearm)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 obj/brain.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 obj/driver.o
+ .comment       0x00000000       0x12 obj/led_alarm.o
+ .comment       0x00000000       0x12 obj/main.o
+ .comment       0x00000000       0x12 obj/pressure_sensor.o
+ .comment       0x00000000       0x12 obj/startup.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 obj/brain.o
+ .ARM.attributes
+                0x00000033       0x33 obj/driver.o
+ .ARM.attributes
+                0x00000066       0x33 obj/led_alarm.o
+ .ARM.attributes
+                0x00000099       0x33 obj/main.o
+ .ARM.attributes
+                0x000000cc       0x33 obj/pressure_sensor.o
+ .ARM.attributes
+                0x000000ff       0x33 obj/startup.o
