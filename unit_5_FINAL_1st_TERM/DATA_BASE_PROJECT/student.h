@@ -8,7 +8,7 @@ File:fifo.h
 /*Header protection*/
 #ifndef STUDENT_H_
 #define STUDENT_H_
-
+ 
 /*DEBUG*/
 #define debug
 #define yarab printf("@ Func: %s, File: %s, Line: %d \n", __func__, __FILE__, __LINE__);
