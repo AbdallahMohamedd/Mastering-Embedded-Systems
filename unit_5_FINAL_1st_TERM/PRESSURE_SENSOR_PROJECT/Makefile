@@ -12,7 +12,7 @@ PROJECT_NAME=bin/P1_High_Pressure_Detector
 all: $(PROJECT_NAME).bin
 	@echo "=================> Build Done <================="
 	@echo " :') "
-
+  
 obj/%.o: src/%.c
 	$(CC)gcc.exe -c -O0 $(INCS) $(CFLAGS) -mthumb -std=c99 $< -o $@
 
