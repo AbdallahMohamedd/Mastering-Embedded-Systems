@@ -18,6 +18,7 @@ void US_SET_distance (int distance)
 
 state_func(CA_waiting_func)
 {
+	yarab;
 	// state name
 	CA_STATE_ID = CA_waiting_state;
 	printf("CA_waiting STATE: CA_distance = %d  CA_speed = %d \n", CA_distance, CA_speed);
