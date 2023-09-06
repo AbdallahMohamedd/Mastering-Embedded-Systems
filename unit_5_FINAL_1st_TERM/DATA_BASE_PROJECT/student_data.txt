@@ -1,0 +1,6 @@
+1 Abdullah Mohamed 3.5 2 4 6 2 8
+2 Sara Hany 3.4 1 5 9 10 2 
+3 Youssef Samy 3.6 10 11 2 5 17
+4 Gorge Anies 3.6 10 3 2 6 8
+1 Asmaa Ahmed 3.2 1 5 9 2 6
+5 Alaa Saed 3 1 4 5 7 2
