@@ -1,0 +1,26 @@
+07:21:59 **** Incremental Build of configuration Debug for project toggel_led ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "toggel_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_6_Micro_controller_Arch\lesson_3_MCU_Clocks\toggel_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="toggel_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: toggel_led.elf
+ 
+arm-none-eabi-objdump -h -S  toggel_led.elf  > "toggel_led.list"
+arm-none-eabi-objcopy  -O ihex  toggel_led.elf  "toggel_led.hex"
+arm-none-eabi-objcopy  -O binary  toggel_led.elf  "toggel_led.bin"
+arm-none-eabi-objcopy  -O verilog  toggel_led.elf  "toggel_led.verilog"
+arm-none-eabi-size   toggel_led.elf 
+   text	   data	    bss	    dec	    hex	filename
+    700	      8	   1568	   2276	    8e4	toggel_led.elf
+Finished building: default.size.stdout
+Finished building: toggel_led.hex
+Finished building: toggel_led.bin
+Finished building: toggel_led.verilog
+Finished building: toggel_led.list
+ 
+ 
+ 
+ 
+ 
+
+07:22:00 Build Finished. 0 errors, 0 warnings. (took 542ms)
+
