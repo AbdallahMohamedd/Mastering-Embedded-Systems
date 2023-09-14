@@ -1,0 +1,56 @@
+10:18:02 **** Build of configuration Debug for project LAB_2 ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "LAB_2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_6_Micro_controller_Arch\lesson_4_INTERRUPTS\LAB_2\LAB_2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB_2.elf
+ 
+arm-none-eabi-size   LAB_2.elf 
+arm-none-eabi-objdump -h -S  LAB_2.elf  > "LAB_2.list"
+arm-none-eabi-objcopy  -O binary  LAB_2.elf  "LAB_2.bin"
+   text	   data	    bss	    dec	    hex	filename
+    780	      8	   1568	   2356	    934	LAB_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB_2.list
+Finished building: LAB_2.bin
+ 
+ 
+10:19:58 **** Incremental Build of configuration Debug for project LAB_2 ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc-gdwarf-2 -o "LAB_2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_6_Micro_controller_Arch\lesson_4_INTERRUPTS\LAB_2\LAB_2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [makefile:52: LAB_2.elf] Error 127
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:21:36 **** Incremental Build of configuration Debug for project LAB_2 ****
+make -j20 all 
+arm-none-eabi-gcc-gdwarf-2 -o "LAB_2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_6_Micro_controller_Arch\lesson_4_INTERRUPTS\LAB_2\LAB_2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:/st/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_1.4.0.202007081208/tools/bin/sh: arm-none-eabi-gcc-gdwarf-2: not found
+make: *** [makefile:52: LAB_2.elf] Error 127
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+10:22:10 **** Incremental Build of configuration Debug for project LAB_2 ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 -o "LAB_2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_6_Micro_controller_Arch\lesson_4_INTERRUPTS\LAB_2\LAB_2\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB_2.elf
+ 
+arm-none-eabi-objdump -h -S  LAB_2.elf  > "LAB_2.list"
+arm-none-eabi-objcopy  -O binary  LAB_2.elf  "LAB_2.bin"
+arm-none-eabi-size   LAB_2.elf 
+arm-none-eabi-objcopy  -O ihex  LAB_2.elf  "LAB_2.hex"
+   text	   data	    bss	    dec	    hex	filename
+    780	      8	   1568	   2356	    934	LAB_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB_2.bin
+Finished building: LAB_2.hex
+Finished building: LAB_2.list
+ 
+ 
+ 
