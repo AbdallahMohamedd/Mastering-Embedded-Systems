@@ -1,0 +1,317 @@
+
+XC8Application1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000006c  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000208  2**0
+                  ALLOC, LOAD, DATA
+  2 .comment      0000002f  00000000  00000000  00000208  2**0
+                  CONTENTS, READONLY
+  3 .debug_aranges 00000038  00000000  00000000  00000237  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   000008b7  00000000  00000000  0000026f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 00000586  00000000  00000000  00000b26  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   000002ab  00000000  00000000  000010ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  000000a8  00000000  00000000  00001358  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000196  00000000  00000000  00001400  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000001da  00000000  00000000  00001596  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000028  00000000  00000000  00001770  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .text         00000004  000001b0  000001b0  00000204  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00001798  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text.main    00000072  0000006c  0000006c  000000c0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .text.__vector_1 00000046  000000de  000000de  00000132  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text.__vector_2 00000046  00000124  00000124  00000178  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.__vector_3 00000046  0000016a  0000016a  000001be  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 6f 00 	jmp	0xde	; 0xde <__vector_1>
+   8:	0c 94 92 00 	jmp	0x124	; 0x124 <__vector_2>
+   c:	0c 94 b5 00 	jmp	0x16a	; 0x16a <__vector_3>
+  10:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  14:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  18:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  1c:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  20:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  24:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  28:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  2c:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  30:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  34:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  38:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  3c:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  40:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  44:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  48:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  4c:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+  50:	0c 94 d8 00 	jmp	0x1b0	; 0x1b0 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <_etext>
+  64:	0c 94 34 00 	jmp	0x68	; 0x68 <_exit>
+
+00000068 <_exit>:
+  68:	f8 94       	cli
+
+0000006a <__stop_program>:
+  6a:	ff cf       	rjmp	.-2      	; 0x6a <__stop_program>
+
+Disassembly of section .text:
+
+000001b0 <__bad_interrupt>:
+ 1b0:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.main:
+
+0000006c <main>:
+#define IO_DDRD *(volatile unsigned int *)(IO_BASE + 0x11)
+#define IO_PORTD *(volatile unsigned int *)(IO_BASE + 0x12)
+
+int main(void)
+{
+	SET_BIT(IO_DDRD,5);
+  6c:	81 b3       	in	r24, 0x11	; 17
+  6e:	92 b3       	in	r25, 0x12	; 18
+  70:	80 62       	ori	r24, 0x20	; 32
+  72:	92 bb       	out	0x12, r25	; 18
+  74:	81 bb       	out	0x11, r24	; 17
+	SET_BIT(IO_DDRD,6);
+  76:	81 b3       	in	r24, 0x11	; 17
+  78:	92 b3       	in	r25, 0x12	; 18
+  7a:	80 64       	ori	r24, 0x40	; 64
+  7c:	92 bb       	out	0x12, r25	; 18
+  7e:	81 bb       	out	0x11, r24	; 17
+	SET_BIT(IO_DDRD,7);
+  80:	81 b3       	in	r24, 0x11	; 17
+  82:	92 b3       	in	r25, 0x12	; 18
+  84:	80 68       	ori	r24, 0x80	; 128
+  86:	92 bb       	out	0x12, r25	; 18
+  88:	81 bb       	out	0x11, r24	; 17
+	
+	//ENABLE INT
+	SET_BIT(INT_GICR,5); //INT2
+  8a:	8b b7       	in	r24, 0x3b	; 59
+  8c:	9c b7       	in	r25, 0x3c	; 60
+  8e:	80 62       	ori	r24, 0x20	; 32
+  90:	9c bf       	out	0x3c, r25	; 60
+  92:	8b bf       	out	0x3b, r24	; 59
+	SET_BIT(INT_GICR,6); //INT0
+  94:	8b b7       	in	r24, 0x3b	; 59
+  96:	9c b7       	in	r25, 0x3c	; 60
+  98:	80 64       	ori	r24, 0x40	; 64
+  9a:	9c bf       	out	0x3c, r25	; 60
+  9c:	8b bf       	out	0x3b, r24	; 59
+	SET_BIT(INT_GICR,7); //INT1
+  9e:	8b b7       	in	r24, 0x3b	; 59
+  a0:	9c b7       	in	r25, 0x3c	; 60
+  a2:	80 68       	ori	r24, 0x80	; 128
+  a4:	9c bf       	out	0x3c, r25	; 60
+  a6:	8b bf       	out	0x3b, r24	; 59
+	
+	//INT_MCUCR INT0 AND INT1 INT0 AT ANY LOGIC INT1 IN RISING
+	SET_BIT(INT_MCUCR,0);//ISC00 INT0
+  a8:	85 b7       	in	r24, 0x35	; 53
+  aa:	96 b7       	in	r25, 0x36	; 54
+  ac:	81 60       	ori	r24, 0x01	; 1
+  ae:	96 bf       	out	0x36, r25	; 54
+  b0:	85 bf       	out	0x35, r24	; 53
+	RESET_BIT(INT_MCUCR,1);//ISC01 INT0
+  b2:	85 b7       	in	r24, 0x35	; 53
+  b4:	96 b7       	in	r25, 0x36	; 54
+  b6:	8d 7f       	andi	r24, 0xFD	; 253
+  b8:	96 bf       	out	0x36, r25	; 54
+  ba:	85 bf       	out	0x35, r24	; 53
+	SET_BIT(INT_MCUCR,2);//ISC10 INT1
+  bc:	85 b7       	in	r24, 0x35	; 53
+  be:	96 b7       	in	r25, 0x36	; 54
+  c0:	84 60       	ori	r24, 0x04	; 4
+  c2:	96 bf       	out	0x36, r25	; 54
+  c4:	85 bf       	out	0x35, r24	; 53
+	SET_BIT(INT_MCUCR,3);//ISC11 INT1
+  c6:	85 b7       	in	r24, 0x35	; 53
+  c8:	96 b7       	in	r25, 0x36	; 54
+  ca:	88 60       	ori	r24, 0x08	; 8
+  cc:	96 bf       	out	0x36, r25	; 54
+  ce:	85 bf       	out	0x35, r24	; 53
+	
+	//INT_MCUCSR INT2 MAKE INT2 IN FALLING
+	RESET_BIT(INT_MCUCSR,6);//ISC2 INT2
+  d0:	84 b7       	in	r24, 0x34	; 52
+  d2:	95 b7       	in	r25, 0x35	; 53
+  d4:	8f 7b       	andi	r24, 0xBF	; 191
+  d6:	95 bf       	out	0x35, r25	; 53
+  d8:	84 bf       	out	0x34, r24	; 52
+	
+	
+    sei();
+  da:	78 94       	sei
+  dc:	ff cf       	rjmp	.-2      	; 0xdc <main+0x70>
+
+Disassembly of section .text.__vector_1:
+
+000000de <__vector_1>:
+    while(1);
+}
+
+
+ISR(INT0_vect)
+{
+  de:	1f 92       	push	r1
+  e0:	0f 92       	push	r0
+  e2:	0f b6       	in	r0, 0x3f	; 63
+  e4:	0f 92       	push	r0
+  e6:	11 24       	eor	r1, r1
+  e8:	2f 93       	push	r18
+  ea:	8f 93       	push	r24
+  ec:	9f 93       	push	r25
+	SET_BIT(IO_PORTD,5);
+  ee:	82 b3       	in	r24, 0x12	; 18
+  f0:	93 b3       	in	r25, 0x13	; 19
+  f2:	80 62       	ori	r24, 0x20	; 32
+  f4:	93 bb       	out	0x13, r25	; 19
+  f6:	82 bb       	out	0x12, r24	; 18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  f8:	2f ef       	ldi	r18, 0xFF	; 255
+  fa:	80 e7       	ldi	r24, 0x70	; 112
+  fc:	92 e0       	ldi	r25, 0x02	; 2
+  fe:	21 50       	subi	r18, 0x01	; 1
+ 100:	80 40       	sbci	r24, 0x00	; 0
+ 102:	90 40       	sbci	r25, 0x00	; 0
+ 104:	e1 f7       	brne	.-8      	; 0xfe <__vector_1+0x20>
+ 106:	00 c0       	rjmp	.+0      	; 0x108 <__vector_1+0x2a>
+ 108:	00 00       	nop
+	_delay_ms(100);
+	RESET_BIT(IO_PORTD,5);
+ 10a:	82 b3       	in	r24, 0x12	; 18
+ 10c:	93 b3       	in	r25, 0x13	; 19
+ 10e:	8f 7d       	andi	r24, 0xDF	; 223
+ 110:	93 bb       	out	0x13, r25	; 19
+ 112:	82 bb       	out	0x12, r24	; 18
+}
+ 114:	9f 91       	pop	r25
+ 116:	8f 91       	pop	r24
+ 118:	2f 91       	pop	r18
+ 11a:	0f 90       	pop	r0
+ 11c:	0f be       	out	0x3f, r0	; 63
+ 11e:	0f 90       	pop	r0
+ 120:	1f 90       	pop	r1
+ 122:	18 95       	reti
+
+Disassembly of section .text.__vector_2:
+
+00000124 <__vector_2>:
+
+ISR(INT1_vect)
+{
+ 124:	1f 92       	push	r1
+ 126:	0f 92       	push	r0
+ 128:	0f b6       	in	r0, 0x3f	; 63
+ 12a:	0f 92       	push	r0
+ 12c:	11 24       	eor	r1, r1
+ 12e:	2f 93       	push	r18
+ 130:	8f 93       	push	r24
+ 132:	9f 93       	push	r25
+	SET_BIT(IO_PORTD,6);
+ 134:	82 b3       	in	r24, 0x12	; 18
+ 136:	93 b3       	in	r25, 0x13	; 19
+ 138:	80 64       	ori	r24, 0x40	; 64
+ 13a:	93 bb       	out	0x13, r25	; 19
+ 13c:	82 bb       	out	0x12, r24	; 18
+ 13e:	2f ef       	ldi	r18, 0xFF	; 255
+ 140:	80 e7       	ldi	r24, 0x70	; 112
+ 142:	92 e0       	ldi	r25, 0x02	; 2
+ 144:	21 50       	subi	r18, 0x01	; 1
+ 146:	80 40       	sbci	r24, 0x00	; 0
+ 148:	90 40       	sbci	r25, 0x00	; 0
+ 14a:	e1 f7       	brne	.-8      	; 0x144 <__vector_2+0x20>
+ 14c:	00 c0       	rjmp	.+0      	; 0x14e <__vector_2+0x2a>
+ 14e:	00 00       	nop
+	_delay_ms(100);
+	RESET_BIT(IO_PORTD,6);
+ 150:	82 b3       	in	r24, 0x12	; 18
+ 152:	93 b3       	in	r25, 0x13	; 19
+ 154:	8f 7b       	andi	r24, 0xBF	; 191
+ 156:	93 bb       	out	0x13, r25	; 19
+ 158:	82 bb       	out	0x12, r24	; 18
+}
+ 15a:	9f 91       	pop	r25
+ 15c:	8f 91       	pop	r24
+ 15e:	2f 91       	pop	r18
+ 160:	0f 90       	pop	r0
+ 162:	0f be       	out	0x3f, r0	; 63
+ 164:	0f 90       	pop	r0
+ 166:	1f 90       	pop	r1
+ 168:	18 95       	reti
+
+Disassembly of section .text.__vector_3:
+
+0000016a <__vector_3>:
+
+ISR(INT2_vect)
+{
+ 16a:	1f 92       	push	r1
+ 16c:	0f 92       	push	r0
+ 16e:	0f b6       	in	r0, 0x3f	; 63
+ 170:	0f 92       	push	r0
+ 172:	11 24       	eor	r1, r1
+ 174:	2f 93       	push	r18
+ 176:	8f 93       	push	r24
+ 178:	9f 93       	push	r25
+	SET_BIT(IO_PORTD,7);
+ 17a:	82 b3       	in	r24, 0x12	; 18
+ 17c:	93 b3       	in	r25, 0x13	; 19
+ 17e:	80 68       	ori	r24, 0x80	; 128
+ 180:	93 bb       	out	0x13, r25	; 19
+ 182:	82 bb       	out	0x12, r24	; 18
+ 184:	2f ef       	ldi	r18, 0xFF	; 255
+ 186:	80 e7       	ldi	r24, 0x70	; 112
+ 188:	92 e0       	ldi	r25, 0x02	; 2
+ 18a:	21 50       	subi	r18, 0x01	; 1
+ 18c:	80 40       	sbci	r24, 0x00	; 0
+ 18e:	90 40       	sbci	r25, 0x00	; 0
+ 190:	e1 f7       	brne	.-8      	; 0x18a <__vector_3+0x20>
+ 192:	00 c0       	rjmp	.+0      	; 0x194 <__vector_3+0x2a>
+ 194:	00 00       	nop
+	_delay_ms(100);
+	RESET_BIT(IO_PORTD,7);
+ 196:	82 b3       	in	r24, 0x12	; 18
+ 198:	93 b3       	in	r25, 0x13	; 19
+ 19a:	8f 77       	andi	r24, 0x7F	; 127
+ 19c:	93 bb       	out	0x13, r25	; 19
+ 19e:	82 bb       	out	0x12, r24	; 18
+ 1a0:	9f 91       	pop	r25
+ 1a2:	8f 91       	pop	r24
+ 1a4:	2f 91       	pop	r18
+ 1a6:	0f 90       	pop	r0
+ 1a8:	0f be       	out	0x3f, r0	; 63
+ 1aa:	0f 90       	pop	r0
+ 1ac:	1f 90       	pop	r1
+ 1ae:	18 95       	reti
