@@ -1,0 +1,152 @@
+07:56:58 **** Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "LAB.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_7_MCU_Esseential_Preipherals\lesson_1\LAB\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+C:/Users/Abdullah Mohamed/OneDrive/Desktop/Mastering-Embedded-Systems/unit_7_MCU_Esseential_Preipherals/lesson_1/LAB/Debug/../Src/main.c:82: undefined reference to `interrupt_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: LAB.elf] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+08:18:26 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:121:6: error: redefinition of 'clock_init'
+ void clock_init(void)
+      ^~~~~~~~~~
+../Src/main.c:68:6: note: previous definition of 'clock_init' was here
+ void clock_init(void)
+      ^~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+08:18:28 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:121:6: error: redefinition of 'clock_init'
+ void clock_init(void)
+      ^~~~~~~~~~
+../Src/main.c:68:6: note: previous definition of 'clock_init' was here
+ void clock_init(void)
+      ^~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+08:21:30 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:114:6: error: redefinition of 'clock_init'
+ void clock_init(void)
+      ^~~~~~~~~~
+../Src/main.c:61:6: note: previous definition of 'clock_init' was here
+ void clock_init(void)
+      ^~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+11:03:34 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "LAB.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_7_MCU_Esseential_Preipherals\lesson_1\LAB\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB.elf
+ 
+arm-none-eabi-size   LAB.elf 
+arm-none-eabi-objdump -h -S  LAB.elf  > "LAB.list"
+arm-none-eabi-objcopy  -O binary  LAB.elf  "LAB.bin"
+   text	   data	    bss	    dec	    hex	filename
+    956	      8	   1568	   2532	    9e4	LAB.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB.bin
+ 
+Finished building: LAB.list
+ 
+11:12:25 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_init':
+../Src/main.c:124:2: warning: "/*" within comment [-Wcomment]
+  /*set GPIOPA13 as an input to toggel led on GBIOPB13 "Bush/Pull"*/
+   
+arm-none-eabi-gcc -gdwarf-2 -o "LAB.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_7_MCU_Esseential_Preipherals\lesson_1\LAB\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB.elf
+ 
+arm-none-eabi-objdump -h -S  LAB.elf  > "LAB.list"
+arm-none-eabi-objcopy  -O binary  LAB.elf  "LAB.bin"
+arm-none-eabi-size   LAB.elf 
+   text	   data	    bss	    dec	    hex	filename
+    860	      8	   1568	   2436	    984	LAB.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB.bin
+ 
+Finished building: LAB.list
+ 
+11:14:47 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "LAB.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_7_MCU_Esseential_Preipherals\lesson_1\LAB\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB.elf
+ 
+arm-none-eabi-objdump -h -S  LAB.elf  > "LAB.list"
+arm-none-eabi-objcopy  -O binary  LAB.elf  "LAB.bin"
+arm-none-eabi-size   LAB.elf 
+   text	   data	    bss	    dec	    hex	filename
+    820	      8	   1568	   2396	    95c	LAB.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB.bin
+Finished building: LAB.list
+ 
+ 
+11:21:07 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'clock_init':
+../Src/main.c:83:10: error: 'RCC_APB2ENR' undeclared (first use in this function); did you mean 'APB2ENR'?
+  SET_BIT(RCC_APB2ENR,2); //enable clock for port A
+          ^
+../Src/main.c:28:31: note: in definition of macro 'SET_BIT'
+ #define SET_BIT(address, bit) address |= (1<<bit)
+                               ^~~~~~~
+../Src/main.c:83:10: note: each undeclared identifier is reported only once for each function it appears in
+  SET_BIT(RCC_APB2ENR,2); //enable clock for port A
+          ^
+../Src/main.c:28:31: note: in definition of macro 'SET_BIT'
+ #define SET_BIT(address, bit) address |= (1<<bit)
+                               ^~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+11:21:26 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "LAB.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_7_MCU_Esseential_Preipherals\lesson_1\LAB\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB.elf
+ 
+arm-none-eabi-objdump -h -S  LAB.elf  > "LAB.list"
+arm-none-eabi-objcopy  -O binary  LAB.elf  "LAB.bin"
+arm-none-eabi-size   LAB.elf 
+   text	   data	    bss	    dec	    hex	filename
+    916	      8	   1568	   2492	    9bc	LAB.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB.bin
+ 
+Finished building: LAB.list
+ 
+11:22:10 **** Incremental Build of configuration Debug for project LAB ****
+make -j20 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "LAB.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Abdullah Mohamed\OneDrive\Desktop\Mastering-Embedded-Systems\unit_7_MCU_Esseential_Preipherals\lesson_1\LAB\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB.elf
+ 
+arm-none-eabi-objdump -h -S  LAB.elf  > "LAB.list"
+arm-none-eabi-objcopy  -O binary  LAB.elf  "LAB.bin"
+arm-none-eabi-size   LAB.elf 
+   text	   data	    bss	    dec	    hex	filename
+    916	      8	   1568	   2492	    9bc	LAB.elf
+Finished building: default.size.stdout
+ 
+Finished building: LAB.bin
+Finished building: LAB.list
+ 
+ 
