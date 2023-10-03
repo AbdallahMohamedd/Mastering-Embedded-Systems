@@ -125,7 +125,7 @@ int main(void)
 			}
 		}
 		first_number = temp_0 + temp_1 + temp_2 + temp_3 + temp_4;
-		temp_0 = 0, temp_1 = 0, temp_2 = 0, temp_3 = 0, temp_4 = 0;
+		temp_0 = 0; temp_1 = 0; temp_2 = 0; temp_3 = 0; temp_4 = 0;
 		number_counter = 0;
 		while (flag_2)
 		{
@@ -230,7 +230,7 @@ int main(void)
 		LCD_SET_CURSOR_FUNC(0, 0);
 		flag_2 = 1;
 		flag_1 = 1;
-		temp_0 = 0, temp_1 = 0, temp_2 = 0, temp_3 = 0, temp_4 = 0;
+		temp_0 = 0; temp_1 = 0; temp_2 = 0; temp_3 = 0; temp_4 = 0;
 		first_number = 0;
 		second_number = 0;
 	}
