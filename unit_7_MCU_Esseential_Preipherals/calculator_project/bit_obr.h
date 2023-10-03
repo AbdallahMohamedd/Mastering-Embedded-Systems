@@ -1,0 +1,20 @@
+/*
+ * bit_obr.h
+ *
+ * Created: 9/30/2023 6:14:53 AM
+ *  Author: Abdullah Mohamed
+ */ 
+
+
+#ifndef BIT_OBR_H_
+#define BIT_OBR_H_
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#define SET_BIT(address, bit)			 address |= (1 << bit)
+#define RESET_BIT(address, bit)		   	 address &= ~(1 << bit)
+#define TOGGEL_BIT(address, bit)	   	 address ^= (1 << bit)
+#define READ_BIT(address, bit)		     ((address & (1 << bit)) >> bit)
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#endif /* BIT_OBR_H_ */
