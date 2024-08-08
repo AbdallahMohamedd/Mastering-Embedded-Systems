@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;largest_number&apos;" deleteContents="false" description="Delete resource &apos;largest_number&apos;" element1="/largest_number" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1687251100458"/>&#x0A;<refactoring comment="Delete resource &apos;assi_1_1&apos;" deleteContents="false" description="Delete resource &apos;assi_1_1&apos;" element1="/assi_1_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1687251991552"/>
-</session>

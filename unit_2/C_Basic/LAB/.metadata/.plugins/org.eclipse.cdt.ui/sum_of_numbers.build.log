@@ -1,9 +1,0 @@
-09:41:26 **** Rebuild of configuration Debug for project sum_of_numbers ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\sum_of_numbers.o" "..\\src\\sum_of_numbers.c" 
-gcc: error: ..\src\sum_of_numbers.c: No such file or directory
-gcc: fatal error: no input files
-compilation terminated.
-
-09:41:26 Build Finished (took 253ms)
-
